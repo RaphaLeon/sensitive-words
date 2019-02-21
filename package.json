@@ -1,0 +1,40 @@
+{
+  "name": "sensitive-words",
+  "version": "1.0.0",
+  "description": "Filter out a list of sensitive words",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build",
+    "test": "jest",
+    "test:watch": "npm run test -- --watch"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaphaLeon/sensitive-words.git"
+  },
+  "keywords": [
+    "filter",
+    "filtering",
+    "sensitive",
+    "words"
+  ],
+  "author": "Rafael Gil Leon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaphaLeon/sensitive-words/issues"
+  },
+  "homepage": "https://github.com/RaphaLeon/sensitive-words#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "jest": "^24.1.0",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {}
+}
